@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+    margin: 20px auto;
+    columns: 5;
+    column-gap: 10px;
+}
+
+.container .box{
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.container .box img{
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Responsive Design */
+
+@media(max-width: 1200px){
+    .container{
+        columns: 4;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        columns: 3;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        columns: 2;
+    }
+}
